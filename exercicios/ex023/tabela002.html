@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -25,9 +26,22 @@
 
         }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(65, 63, 63);
             color: white;
         }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(65, 63, 63);
+            top: -1px
+        }
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgrey;
+        }
+
         td.num {
             text-align: right;
         }
@@ -173,7 +187,7 @@
             </tr>
         </tfoot>
     </Table>
-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat nemo veniam, delectus ut recusandae accusamus quibusdam enim facilis dolore odit, mollitia aspernatur similique deserunt quia perferendis culpa adipisci possimus.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolor, exercitationem sed fugiat fugit in non aliquam expedita, libero natus voluptatibus commodi minima iste illo quasi pariatur maxime ad repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor possimus explicabo quae velit tenetur consequatur molestiae quaerat, sequi qui vel tempora. Consequuntur doloribus accusantium at vitae repellat aspernatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veritatis corrupti saepe tempore magni eaque, voluptatum fuga maxime cupiditate non modi neque hic consequatur perspiciatis laborum, delectus autem molestiae dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat nemo veniam, delectus ut recusandae accusamus quibusdam enim facilis dolore odit, mollitia aspernatur similique deserunt quia perferendis culpa adipisci possimus.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolor, exercitationem sed fugiat fugit in non aliquam expedita, libero natus voluptatibus commodi minima iste illo quasi pariatur maxime ad repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor possimus explicabo quae velit tenetur consequatur molestiae quaerat, sequi qui vel tempora. Consequuntur doloribus accusantium at vitae repellat aspernatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veritatis corrupti saepe tempore magni eaque, voluptatum fuga maxime cupiditate non modi neque hic consequatur perspiciatis laborum, delectus autem molestiae dignissimos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat nemo veniam, delectus ut recusandae accusamus quibusdam enim facilis dolore odit, mollitia aspernatur similique deserunt quia perferendis culpa adipisci possimus.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolor, exercitationem sed fugiat fugit in non aliquam expedita, libero natus voluptatibus commodi minima iste illo quasi pariatur maxime ad repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor possimus explicabo quae velit tenetur consequatur molestiae quaerat, sequi qui vel tempora. Consequuntur doloribus accusantium at vitae repellat aspernatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veritatis corrupti saepe tempore magni eaque, voluptatum fuga maxime cupiditate non modi neque hic consequatur perspiciatis laborum, delectus autem molestiae dignissimos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo fugiat nemo veniam, delectus ut recusandae accusamus quibusdam enim facilis dolore odit, mollitia aspernatur similique deserunt quia perferendis culpa adipisci possimus.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque dolor, exercitationem sed fugiat fugit in non aliquam expedita, libero natus voluptatibus commodi minima iste illo quasi pariatur maxime ad repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolor possimus explicabo quae velit tenetur consequatur molestiae quaerat, sequi qui vel tempora. Consequuntur doloribus accusantium at vitae repellat aspernatur quidem.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veritatis corrupti saepe tempore magni eaque, voluptatum fuga maxime cupiditate non modi neque hic consequatur perspiciatis laborum, delectus autem molestiae dignissimos.</p>
     
 </body>
 </html>
